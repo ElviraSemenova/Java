@@ -124,3 +124,5 @@ int[] array = new int[]{1, 2, 3};
  
  array[0] = 10;
  array[0] = 20;
+ 
+ [Тестовое задание по итогам блока] (https://github.com/ShalopaykaQA/games_oop_javafx/commit/13b73911c578c50ea0934040f3fcdd1ccb8846b7)
