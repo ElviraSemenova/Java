@@ -9,7 +9,7 @@ public class MinDiapasonTest {
     @Test
     public void whenFirstMin() {
         assertThat(
-                MinDiapason.findMin(
+                MinDiapason.minimum(
                         new int[] {-1, 0, 5, 10},
                         1, 3
                 ),
@@ -20,7 +20,7 @@ public class MinDiapasonTest {
     @Test
     public void whenLastMin() {
         assertThat(
-                MinDiapason.findMin(
+                MinDiapason.minimum(
                         new int[] {10, 5, 3, 1},
                         1, 3
                 ),
@@ -31,7 +31,7 @@ public class MinDiapasonTest {
     @Test
     public void whenMiddleMin() {
         assertThat(
-                MinDiapason.findMin(
+                MinDiapason.minimum(
                         new int[] {10, 2, 5, 1},
                         0, 2
                 ),

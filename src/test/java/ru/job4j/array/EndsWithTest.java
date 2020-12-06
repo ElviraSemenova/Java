@@ -11,7 +11,7 @@ public class EndsWithTest {
     public void whenEndWithPrefixThenTrue() {
         char[] word = {'H', 'e', 'l', 'l', 'o'};
         char[] post = {'l', 'o'};
-        boolean result = EndsWith.endsWith(word, post);
+        boolean result = EndsWith.ends(word, post);
         assertThat(result, is(true));
     }
 
@@ -19,7 +19,7 @@ public class EndsWithTest {
     public void whenNotEndWithPrefixThenFalse() {
         char[] word = {'H', 'e', 'l', 'l', 'o'};
         char[] post = {'l', 'a'};
-        boolean result = EndsWith.endsWith(word, post);
+        boolean result = EndsWith.ends(word, post);
         assertThat(result, is(false));
     }
 
@@ -27,7 +27,7 @@ public class EndsWithTest {
     public void whenNotEndWithPrefix1ThenFalse() {
         char[] word = {'H', 'e', 'l', 'l', 'o'};
         char[] post = {'r', 'o'};
-        boolean result = EndsWith.endsWith(word, post);
+        boolean result = EndsWith.ends(word, post);
         assertThat(result, is(false));
     }
 }
