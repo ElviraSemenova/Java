@@ -4,17 +4,23 @@ import java.util.Scanner;
 
 public class Matches {
     public static void main(String[] args) {
+        boolean run = true;
         Scanner input = new Scanner(System.in);
-        int mat = 11;
-        while (mat != 0) {
+        int matches = 11;
+        while (run) {
             System.out.print("Заберите от 1 до 3х спичек, выиигрывает тот, кто заберет последнюю: ");
             int select = Integer.valueOf(input.nextLine());
-                mat = mat - select;
-                System.out.println("Осталось " + mat + ". Заберите от 1 до 3х спичек:");
+            if (select < 1 || select > 3) {
+                System.out.println("Вы выбрали неверное количество");
+            } else if (select > 0 || select <= 3) {
+                matches = matches - select;
+                System.out.println("Осталось " + matches + ". Заберите от 1 до 3х спичек:");
             }
-            if (mat == 0) {
-                System.out.println("Игра завершена.");
+            if (matches == 0) {
+                run = false;
+                System.out.println("Осталось 0 спичек, Вы выйграли!");
             }
         }
     }
+}
 
