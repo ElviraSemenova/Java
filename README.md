@@ -822,7 +822,7 @@ https://qna.habr.com/q/756609
 
 ## Collections Lite
 
-#### part 2. [Collections Pro](CollectionsPro.md#collections-pro)
+#### [Collections Pro](CollectionsPro.md#collections-pro)
 
 [1. Что такое коллекция?](#1-Что-такое-коллекция)
 
